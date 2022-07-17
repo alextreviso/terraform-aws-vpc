@@ -4,15 +4,9 @@ variable "region" {}
 variable "env" {}
 variable "public_subnets_cidrs" {}
 variable "private_subnets_cidrs" {}
-
-variable "private_subnets" {
-  type = list(string)
-}
-
-variable "public_subnets" {
-  type = list(string)
-}
-
-variable "internet_gateway" {
-  type = list(string)
-}
+variable "private_subnets" {}
+variable "public_subnets" {}
+variable "aws_eip" {}
+variable "nat_gateway" {}
+variable "route_table_private" {}
+variable "internet_gateway" {}
